@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>synqd — Privacy Policy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --paper:  #FBF1EC;
+      --paper2: #F5E6DE;
+      --ink:    #1A0E14;
+      --ink3:   #6E555E;
+      --ink4:   #A89098;
+      --line:   #EBDFD9;
+      --dusk1:  #E8627A;
+      --dusk2:  #A04A6F;
+      --dusk3:  #4B2247;
+      --dark:   #0D0812;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    /* ── NAV ───────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 52px;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      background: rgba(13, 8, 18, 0.65);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 9px 22px;
+      border-radius: 100px;
+      background: rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: -0.01em;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,0.16);
+      transition: background 0.2s, color 0.2s;
+    }
+
+    .nav-back:hover {
+      background: rgba(255,255,255,0.18);
+      color: #fff;
+    }
+
+    /* ── CONTENT ────────────────────────────────────── */
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 120px 52px 140px;
+    }
+
+    .page-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--dusk2);
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 500;
+      color: var(--ink);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+      margin-bottom: 14px;
+    }
+
+    .updated {
+      font-size: 12px;
+      font-family: "SF Mono", "Menlo", monospace;
+      color: var(--ink4);
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      margin-bottom: 56px;
+    }
+
+    .intro {
+      font-size: 17px;
+      line-height: 1.7;
+      color: var(--ink3);
+      margin-bottom: 56px;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 56px;
+    }
+
+    h2 {
+      font-size: 11px;
+      font-family: "SF Mono", "Menlo", monospace;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      color: var(--ink4);
+      margin-top: 48px;
+      margin-bottom: 14px;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--ink3);
+      line-height: 1.75;
+      margin-bottom: 14px;
+    }
+
+    ul {
+      color: var(--ink3);
+      font-size: 15px;
+      line-height: 1.75;
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+
+    ul li { margin-bottom: 8px; }
+
+    a {
+      color: var(--dusk2);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--line);
+      margin: 56px 0;
+    }
+
+    .contact-block {
+      background: var(--paper2);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 32px 36px;
+      margin-top: 48px;
+    }
+
+    .contact-block h2 { margin-top: 0; }
+    .contact-block p { margin-bottom: 0; }
+
+    /* ── FOOTER ─────────────────────────────────────── */
+    footer {
+      background: var(--dark);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 36px 52px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 18px;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 32px;
+    }
+
+    .footer-links a {
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+      transition: color 0.18s;
+    }
+
+    .footer-links a:hover { color: rgba(255,255,255,0.65); }
+
+    /* ── RESPONSIVE ─────────────────────────────────── */
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      .wrap { padding: 100px 24px 100px; }
+      footer {
+        flex-direction: column;
+        gap: 22px;
+        padding: 30px 24px;
+        text-align: center;
+      }
+      .footer-links { gap: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="../" class="nav-logo">synqd</a>
+    <a href="../" class="nav-back">← Back</a>
+  </nav>
+
+  <div class="wrap">
+    <p class="page-label">legal</p>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: June 28, 2026</p>
+
+    <p class="intro"><strong>synqd</strong> is a couples app that shows your partner's local time and location in real time. This policy explains what information we collect, how we use it, and your rights.</p>
+
+    <h2>Information We Collect</h2>
+    <p>When you use synqd, we collect the following:</p>
+    <ul>
+      <li><strong>Display name</strong> — the name you enter during setup.</li>
+      <li><strong>Profile photo</strong> — the photo you optionally choose. Stored in our secure file storage.</li>
+      <li><strong>Location</strong> — your city, country, geographic coordinates, and time zone. Collected in the background using iOS significant-change monitoring so your partner's widget always shows your current local time.</li>
+      <li><strong>Invite code</strong> — a temporary 6-character code used to link you with your partner. Deleted automatically once the link is established.</li>
+      <li><strong>Device push token</strong> — your Apple Push Notification service (APNs) token, used to deliver silent background refresh notifications, as well as instant "I miss you" messages upon pressing the heart button.</li>
+    </ul>
+    <p>We do not collect real email addresses, phone numbers, payment information, or any advertising identifiers. A device-generated account identifier (not your personal email) is created automatically on first launch to maintain your account — you never enter it and it is not linked to your identity.</p>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>To display your local time, city, and photo to your linked partner in the app and widget.</li>
+      <li>To keep your partner's view of you up to date as your location or time zone changes.</li>
+      <li>To link your account with your partner's via the invite code flow.</li>
+      <li>To deliver background data refreshes and heartfelt messages via push notifications.</li>
+    </ul>
+    <p>We do not use your data for advertising, analytics sold to third parties, or any purpose beyond operating the app.</p>
+
+    <h2>Data Sharing</h2>
+    <p>Your name, photo, city, and time zone are shared <strong>only with your linked partner</strong>. No one else can see your profile data.</p>
+    <p>We use <strong>Supabase</strong> to store and sync your data. Supabase acts as our backend infrastructure provider. You can review their privacy practices at <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</p>
+    <p>We do not sell your data. We do not share your data with advertisers, data brokers, or any third party beyond the infrastructure provider listed above.</p>
+
+    <h2>Background Location</h2>
+    <p>synqd requests <em>Always On</em> location permission so the app can update your time zone and city in the background — even when you're not actively using it. This is the core feature of the app: your partner's widget shows your current local time without either of you having to manually refresh it.</p>
+    <p>Location data is used solely to derive your city name and time zone. Raw coordinates are stored temporarily and never sold or shared with third parties.</p>
+
+    <h2>Data Retention and Deletion</h2>
+    <p>Your data is stored for as long as your account exists. You can delete your account at any time from within the app (Settings → Delete Account). Deleting your account permanently removes your profile, photo, and location data from our servers. Your partner will be unlinked automatically.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>synqd is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
+
+    <h2>Security</h2>
+    <p>All data is transmitted over HTTPS. Your account is created automatically on first launch using a device-generated identifier stored securely in the iOS keychain — no personal email or password is required from you. Access to your profile data is enforced by RLS (row-level security) policies that ensure only you and your linked partner can read your information.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we make material changes to this policy, we will update the "Last updated" date at the top of this page. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
+
+    <hr />
+
+    <div class="contact-block">
+      <h2>Contact</h2>
+      <p>Questions or requests regarding your data — including deletion requests — can be sent to <a href="mailto:ayan.bb23@gmail.com">ayan.bb23@gmail.com</a>.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">synqd</div>
+    <div class="footer-links">
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="mailto:ayan.bb23@gmail.com">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
