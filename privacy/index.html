@@ -227,7 +227,7 @@
   <div class="wrap">
     <p class="page-label">legal</p>
     <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: June 28, 2026</p>
+    <p class="updated">Last updated: July 9, 2026</p>
 
     <p class="intro"><strong>synqd</strong> is a couples app that shows your partner's local time and location in real time. This policy explains what information we collect, how we use it, and your rights.</p>
 
@@ -237,6 +237,7 @@
       <li><strong>Display name</strong> — the name you enter during setup.</li>
       <li><strong>Profile photo</strong> — the photo you optionally choose. Stored in our secure file storage.</li>
       <li><strong>Location</strong> — your city, country, geographic coordinates, and time zone. Collected in the background using iOS significant-change monitoring so your partner's widget always shows your current local time.</li>
+      <li><strong>Saved Places</strong> — optional named locations you create (e.g. "Home," "Work," "Class"), each with a precise geographic coordinate and radius. Requires iOS Precise Location. Used to detect when you're at one of these places so your partner sees the label instead of your raw city.</li>
       <li><strong>Invite code</strong> — a temporary 6-character code used to link you with your partner. Deleted automatically once the link is established.</li>
       <li><strong>Device push token</strong> — your Apple Push Notification service (APNs) token, used to deliver silent background refresh notifications, as well as instant "I miss you" messages upon pressing the heart button.</li>
     </ul>
@@ -253,15 +254,17 @@
 
     <h2>Data Sharing</h2>
     <p>Your name, photo, city, and time zone are shared <strong>only with your linked partner</strong>. No one else can see your profile data.</p>
+    <p>If your current location matches a Saved Place, only the label (e.g. "Home") is shown to your partner in the app — not the underlying coordinates.</p>
     <p>We use <strong>Supabase</strong> to store and sync your data. Supabase acts as our backend infrastructure provider. You can review their privacy practices at <a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a>.</p>
     <p>We do not sell your data. We do not share your data with advertisers, data brokers, or any third party beyond the infrastructure provider listed above.</p>
 
     <h2>Background Location</h2>
     <p>synqd requests <em>Always On</em> location permission so the app can update your time zone and city in the background — even when you're not actively using it. This is the core feature of the app: your partner's widget shows your current local time without either of you having to manually refresh it.</p>
-    <p>Location data is used solely to derive your city name and time zone. Raw coordinates are stored temporarily and never sold or shared with third parties.</p>
+    <p>Location data is used to derive your city name and time zone, and — if you enable Precise Location and create a Saved Place — to detect when you're within that place's radius. Your general city/time zone coordinates are only kept as needed to keep this feature current. Saved Place coordinates are stored persistently until you delete them from Saved Places in the app. Location data is never sold or shared with third parties.</p>
+    <p>Saved Places requires iOS's Precise Location permission. If Precise Location is off, synqd uses only your approximate location for time zone and city detection, and Saved Places matching is unavailable.</p>
 
     <h2>Data Retention and Deletion</h2>
-    <p>Your data is stored for as long as your account exists. You can delete your account at any time from within the app (Settings → Delete Account). Deleting your account permanently removes your profile, photo, and location data from our servers. Your partner will be unlinked automatically.</p>
+    <p>Your data is stored for as long as your account exists. You can delete your account at any time from within the app (Settings → Delete Account). Deleting your account permanently removes your profile, photo, location, and Saved Places data from our servers. Your partner will be unlinked automatically.</p>
 
     <h2>Children's Privacy</h2>
     <p>synqd is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it.</p>
